@@ -1,0 +1,692 @@
+/* ***************************************************************************************** */
+/* Objective - Dev Tool demo from classmate -> Coolors palette using lock feature: */
+/* ***************************************************************************************** */
+:root {
+  --icy-blue: #add7f6ff;
+  --dusty-taupe: #a18276ff;
+  --blue-energy: #3f8efcff;
+  --granite: #4c6663ff;
+  --tan: #dab785ff;
+}
+
+
+/* ***************************************************************************************** */
+/* Objective - My Dev Tool Demo font pairing CSS Code */
+/* ***************************************************************************************** */
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ************************************************************************************************************************** */
+/* ***************** Objective - Including On Load Animations ************************************ */
+/* ************************************************************************************************************************** */
+
+/* Animation for the Cards */
+.flip-in-hor-bottom {
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for the H1 Tag */
+.bounce-in-top {
+	animation: bounce-in-top 1s both;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Animation for the Nav Buttons on the Bottom */
+.slide-in-left {
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for the Main SCon Icon */
+.swirl-in-fwd {
+	animation: swirl-in-fwd 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ************************************************************************************************************************* */
+/* ************************************************ Main/Default Setup ************************************************ */
+/* ************************************************************************************************************************* */
+/* Grid Set up */
+body {
+  margin: 0px;
+  min-height: 100vh;
+  display: grid;
+  
+  /* Use `grid-template` to control the sizing of these areas. */
+  /* grid-template-columns: 1fr; */
+  grid-template: auto 1fr auto / minmax(375px, 800px) 1fr;
+
+  /* Use `grid-template-areas` to define four named areas: `header`, `main`, `sidebar`, `footer`. */
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    gap: 0;
+    box-sizing: border-box;
+}
+
+/* ************************************************************************************************************************* */
+/* ************************************************ Headers ************************************************ */
+/* ************************************************************************************************************************* */
+
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  animation: bounce-in-top 2s;
+}
+
+.h1-header {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  animation: bounce-in-top 2s;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+
+.h1-main {
+  font-size: 30px;
+  color: black;
+  font-family: "DM Serif Display", serif;
+  animation: bounce-in-top 2s;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  background-color: var(--dusty-taupe);
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px 0 0px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+h3 {
+  margin: 0 auto;
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+}
+
+li {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+}
+
+
+/* ************************************************************************************************************************* */
+/* ************************************************ Page Format ************************************************ */
+/* ************************************************************************************************************************* */
+header {
+  background-color: var(--granite);
+  grid-area: header;
+  font-size: 30px;
+  display: flex;
+}
+
+aside {
+  background-color: var(--blue-energy);
+  grid-area: sidebar;
+  align-items: center;
+  display: none;
+}
+
+main {
+  background-color: var(--icy-blue);
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--granite);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+/* ************************************************************************************************************************** */
+/* ***************************************** Objective - Adding Neumorphism to the Button *********************************** */
+/* ************************************************************************************************************************** */
+button {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  
+  color: #090909;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 2px #c5c5c5, -1px -1px 2px #ffffff;
+  
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  /* border: var(--tan); */
+  border-radius: 8px;
+  background-color: white;
+  /* background-color: var(--dusty-taupe); */
+  color: black;
+  cursor: pointer;
+
+  z-index: 1000;
+}
+
+#top-btn {
+  animation: slide-in-left 2.5s;
+}
+
+.floating-btn:hover {
+  transform: scale(1.2);
+}
+
+#home-icon-animation {
+  animation: swirl-in-fwd 2.5s;
+}
+
+/* *************************************************** */
+/* Floating Links to Each SpencerCon Event*/
+/* *************************************************** */
+#sc1-btn {
+  left: 10px;
+  width: fit-content;
+  animation: slide-in-left 1s;
+  /* border: solid black 2px; */
+}
+
+#sc3-btn {
+  left: 50px;
+  width: fit-content;
+  animation: slide-in-left 1.2s;
+}
+
+#sc5-btn {
+  left: 90px;
+  width: fit-content;
+  animation: slide-in-left 1.4s;
+}
+
+#sc7-btn {
+  left: 130px;
+  width: fit-content;
+  animation: slide-in-left 1.6s;
+}
+
+#sc9-btn {
+  left: 170px;
+  width: fit-content;
+  animation: slide-in-left 1.8s;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ************************************************************************************************************************** */
+/*  ************************************* Containers ********************************************** */
+/* ************************************************************************************************************************** */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+
+.home-icon {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+
+.home-icon img {
+  height: 2rem;
+  width: auto;
+  display: inline-block;
+}
+
+.home-icon:hover {
+  transform: scale(1.2);
+}
+
+.nav-links:hover {
+  transform: scale(1.2);
+  font-family: "DM Serif Display", serif;
+}
+
+
+/* Containers for the main element */
+.main-container {
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+/* Containers for the History.html */
+.history-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img-history-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ************************************************************************************************************************** */
+/* ************************************************ Cards ********************************************************** */
+/* ************************************************************************************************************************** */
+
+.main-card {
+  background-color: rgb(251, 252, 251);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 10px 10px;
+  width: 320px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  animation: flip-in-hor-bottom 1.5s;
+}
+
+.main-card img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.img-history, .history-video {
+  width: 20rem;
+}
+
+.img-history {
+  border-radius: 50px; 
+  padding: 20px;
+  max-height: 1000px;
+}
+
+.history-video {
+  padding: 20px;
+  max-height: 1000px;
+}
+
+
+/* ******************************************************************************************************************************* */
+/* *************** Bootstrap Media Breakpoints ****************************** */
+/* ******************************************************************************************************************************* */
+
+/* Small Screen */
+@media screen and (min-width: 576px) {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    
+    /* Use `grid-template` to control the sizing of these areas. */
+    grid-template: auto 1fr auto / minmax(275px, 360px) 1fr;
+
+    /* Use `grid-template-areas` to define four named areas: `header`, `main`, `sidebar`, `footer`. */
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+      gap: 0;
+      box-sizing: border-box;
+  }
+
+  .main-card {
+    width: 340px;
+  }
+
+  h2 {
+    width: 320px;
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h1-main {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .img-history, .history-video {
+    width: 25rem;
+  }
+
+
+}
+
+/* Medium Screen */
+@media screen and (min-width: 768px) {
+  body {
+    /* margin: 0; */
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    display: grid;
+    
+    /* Use `grid-template` to control the sizing of these areas. */
+    /* grid-template: auto 1fr auto / minmax(275px, 340px) 1fr; */
+
+    /* Use `grid-template-areas` to define four named areas: `header`, `main`, `sidebar`, `footer`. */
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+      gap: 0;
+      box-sizing: border-box;
+  }
+
+  .main-card {
+    width: 380px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h1-main {
+    font-size: 45px;
+  }
+
+  h2 {
+    width: 360px;
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .img-history, .history-video {
+    width: 30rem;
+  }
+}
+
+/* Large Screen */
+@media screen and (min-width: 992px) {
+    body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+
+    /* Use `grid-template-areas` to define four named areas: `header`, `main`, `sidebar`, `footer`. */
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+      gap: 0;
+      box-sizing: border-box;
+  }
+
+  .main-card {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h1-main {
+    font-size: 50px;
+  }
+
+  h2 {
+    width: 380px;
+    font-size: 35px;
+  }
+
+
+  p {
+    font-size: 22px;
+  }
+
+  aside {
+    background-color: var(--blue-energy);
+    grid-area: sidebar;
+    align-items: center;
+    display:block;
+
+  }
+
+  .home-icon img {
+    height: 3.7rem;
+  }
+
+  .home-icon {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+  }
+}
+
+
+
+/* Extra Large Screen */
+@media screen and (min-width: 1200px) {  
+  .main-container {
+    /* align-items: center; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-card {
+    /* padding: 20px; */
+    margin: 20px;
+  }
+
+  aside {
+    background-color: var(--blue-energy);
+    grid-area: sidebar;
+    align-items: center;
+  }
+
+  .img-history, .history-video {
+    width: 40rem;
+  }
+
+  .home-icon img {
+    height: 4.5rem;
+  }
+
+  .home-icon {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+  }
+}
+
+/* Extra Extra Large Screen */
+@media screen and (min-width: 1400px) {
+  .main-container {
+    flex-direction: row;
+  }
+
+  aside {
+    background-color: var(--blue-energy);
+    grid-area: sidebar;
+    align-items: center;
+  }
+
+  .img-history, .history-video {
+    width: 45rem;
+  }
+
+  li {
+    font-size: 1.4rem;
+  }
+}
+
+/* Largest Screen */
+@media screen and (min-width: 2400px) {
+  .main-container {
+    flex-direction: row;
+  }
+
+  aside {
+    background-color: var(--blue-energy);
+    grid-area: sidebar;
+    align-items: center;
+  }
+
+  .img-history, .history-video {
+    width: 60rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+}
