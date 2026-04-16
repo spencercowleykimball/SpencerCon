@@ -170,15 +170,15 @@ body {
 
 h1 {
   font-size: 30px;
-  color: white;
+  color: black;
   font-family: "DM Serif Display", serif;
-  animation: bounce-in-top 2s;
+  /* animation: bounce-in-top 2s; */
 }
 
 .h1-header {
-  color: white;
+  color: black;
   font-family: "DM Serif Display", serif;
-  animation: bounce-in-top 2s;
+  /* animation: bounce-in-top 2s; */
   text-align: center;
   width: auto;
   display: inline-block;
@@ -229,7 +229,9 @@ li {
 /* ************************************************ Page Format ************************************************ */
 /* ************************************************************************************************************************* */
 header {
-  background-color: var(--granite);
+  /* background-color: var(--granite); */
+  /* background-color: rgb(136, 183, 248);  */
+  background-color: rgb(150, 155, 156);
   grid-area: header;
   font-size: 30px;
   display: flex;
@@ -293,24 +295,29 @@ button:hover {
   /* border: var(--tan); */
   border-radius: 8px;
   background-color: white;
-  /* background-color: var(--dusty-taupe); */
   color: black;
   cursor: pointer;
 
   z-index: 1000;
 }
 
-#top-btn {
-  animation: slide-in-left 2.5s;
+.timeline-links {
+  position: fixed;
+  left: 20px;
+  top: 200px;
 }
+
+/* #top-btn {
+  animation: slide-in-left 2.5s;
+} */
 
 .floating-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
-#home-icon-animation {
+/* #home-icon-animation {
   animation: swirl-in-fwd 2.5s;
-}
+} */
 
 /* *************************************************** */
 /* Floating Links to Each SpencerCon Event*/
@@ -323,25 +330,25 @@ button:hover {
 }
 
 #sc3-btn {
-  left: 50px;
+  left: 80px;
   width: fit-content;
   animation: slide-in-left 1.2s;
 }
 
 #sc5-btn {
-  left: 90px;
+  left: 120px;
   width: fit-content;
   animation: slide-in-left 1.4s;
 }
 
 #sc7-btn {
-  left: 130px;
+  left: 160px;
   width: fit-content;
   animation: slide-in-left 1.6s;
 }
 
 #sc9-btn {
-  left: 170px;
+  left: 200px;
   width: fit-content;
   animation: slide-in-left 1.8s;
 }
@@ -378,17 +385,17 @@ a {
 }
 
 .home-icon img {
-  height: 2rem;
+  height: 2.7rem;
   width: auto;
   display: inline-block;
 }
 
 .home-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .nav-links:hover {
-  transform: scale(1.2);
+  transform: scale(1.02);
   font-family: "DM Serif Display", serif;
 }
 
@@ -609,6 +616,11 @@ a {
     position: absolute;
     left: 15px;
     top: 25px;
+  }
+
+  /* fixme - trying to hide the floating buttons when the nav bar on the side shows up */
+  .floating-btn {
+    visibility: hidden;
   }
 }
 

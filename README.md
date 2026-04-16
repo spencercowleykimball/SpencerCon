@@ -2,10 +2,10 @@
 Spencer Conference Official Website!
 
 Final Project
-Your Final Project will include 3 main parts, a website, sharing the website, and some reflection on the semester as a whole. Please read the following instructions carefully to ensure you meet all requirements.
+Your Final Project will include 3 main parts, a website, sharing the website.
 
 Website
-This is your final deliverable and should build on what you have learned throughout the semester with Projects 1, 2, and 3. You may continue to use the same idea from previous projects, but switching to a new idea is also welcome.
+This is your final deliverable and should build on what you have learned throughout the semester with Projects 1, 2, and 3. You may continue to use the same idea from previous projects
 
 Your Final Project website should mostly focus on polishing and adding finishing touches for a deliverable product. I want to see something practical that you would be proud to show other people. Don't bite off more than you can chew, focus more on a clean looking website with finished content rather than fancy animations and fun gimmicks.
 
