@@ -8,7 +8,7 @@
   --blue-energy: #3f8efcff;
   --granite: #4c6663ff;
   --tan: #dab785ff;
-  --header-footer: rgb(203, 232, 252);
+  --header-footer: rgb(223, 239, 250);
 }
 
 
@@ -307,11 +307,6 @@ button:hover {
   z-index: 1000;
 }
 
-.timeline-links {
-  position: fixed;
-  left: 20px;
-  top: 200px;
-}
 
 /* #top-btn {
   animation: slide-in-left 2.5s;
@@ -400,9 +395,21 @@ a {
   transform: scale(1.05);
 }
 
+.timeline-links {
+  position: fixed;
+  left: 15px;
+  top: 200px;
+}
+
+#timeline-header {
+  position: fixed;
+  left: 20px;
+  top: 150px;
+}
+
 .nav-links:hover {
-  transform: scale(1.02);
-  font-family: "DM Serif Display", serif;
+  transform: scale(1.05);
+  /* font-family: "DM Serif Display", serif; */
 }
 
 
