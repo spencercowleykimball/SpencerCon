@@ -150,7 +150,7 @@
 /* Grid Set up */
 body {
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 100px;
   min-height: 100vh;
   display: grid;
   
@@ -165,6 +165,10 @@ body {
     "footer";
     gap: 0;
     box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 40px;
 }
 
 /* ************************************************************************************************************************* */
@@ -520,7 +524,7 @@ a {
 @media screen and (min-width: 576px) {
   body {
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 100px;
     min-height: 100vh;
     display: grid;
     
