@@ -1,32 +1,11 @@
 # SpencerCon
 Spencer Conference Official Website!
 
-Final Project
-Your Final Project will include 3 main parts, a website, sharing the website.
 
-Website
-This is your final deliverable and should build on what you have learned throughout the semester with Projects 1, 2, and 3. You may continue to use the same idea from previous projects
-
-Your Final Project website should mostly focus on polishing and adding finishing touches for a deliverable product. I want to see something practical that you would be proud to show other people. Don't bite off more than you can chew, focus more on a clean looking website with finished content rather than fancy animations and fun gimmicks.
-
-For many of you, this may not be far from what you have already built with Project 2 or 3. That's totally okay. I would love to see additional improvements here, but the ultimate goal is just to have something finished and presentable.
 
 JavaScript Feature
 Besides making this a fully finished website, the only real requirement for this portion is to include a small, practical JavaScript feature. This doesn't need to be super fancy, just something small to showcase your JavaScript skills. Some ideas include a dark mode toggle, project view counter, scroll animation, GitHub API for a list of your repos, GitHub API for your last commit, etc. Feel free to use AI to come up with some feature ideas for this. This feature should also be different from what you do with JavaScript in Project 3.
 
-Share
-Part of the motivation to get your website to feel polished and complete is because you will be sharing this with others.
-
-
-
-
-
-LinkedIn Post
-LinkedIn is a great way to share what you have accomplished in this class. Even if you don't have a lot of connections, posting on LinkedIn can help your profile get exposure to industry professionals and other students.
-
-I don't really have any requirements for what you should post on LinkedIn. You can make it about this class, about your Final Project, or just post that you've been learning new skills in general. I'll leave that up to you. This would be a great place to post your Final Project URL or even a URL to your GitHub with all of your assignments from this class.
-
-Not required, but this would be a great time to update your skills on LinkedIn. Updating your resume with what you've learned in this class is also a great idea.
 
 
 Publish your website using GitHub pages and include the live URL in your repo about section. You will only submit the GitHub repo URL in LearningSuite.
@@ -37,9 +16,11 @@ Publish your website using GitHub pages and include the live URL in your repo ab
 URL to your GitHub repo: https://github.com/spencercowleykimball/SpencerCon
 
 
-A short description of your Final Project website: 
+**A short description of your Final Project website:**
 
-A short description of the small JavaScript feature you included in your website: 
+A website that shows what SpencerCon is all about, as well as share new and upcoming information about the next event. Explore the different events that have happened in the past. I created the SpencerCon logo which acts as the home page link, and a nav bar with a link to each of the different events. And media screen options to make it versatile for laptop/desktop view as well as phone view.
+
+**A short description of the small JavaScript feature you included in your website:**
 
 
 

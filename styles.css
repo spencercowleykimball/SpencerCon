@@ -149,13 +149,14 @@
 /* ************************************************************************************************************************* */
 /* Grid Set up */
 body {
-  margin: 0px;
+  margin: 0 auto;
+  margin-top: 120px;
   min-height: 100vh;
   display: grid;
   
   /* Use `grid-template` to control the sizing of these areas. */
   /* grid-template-columns: 1fr; */
-  grid-template: auto 1fr auto / minmax(375px, 800px) 1fr;
+  grid-template: auto 1fr auto / minmax(375px, 600px) 1fr;
 
   /* Use `grid-template-areas` to define four named areas: `header`, `main`, `sidebar`, `footer`. */
   grid-template-areas:
@@ -239,6 +240,38 @@ header {
   font-size: 30px;
   display: flex;
 }
+
+#header-float {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 120px;
+  
+  /* transition: 0.1s ease; */
+  z-index: 1000;
+}
+
+#header-float.shrink {
+  height: 60px;
+}
+
+h1.shrink {
+  font-size: 24px;
+}
+
+.home-icon.shrink {
+  /* height: 2.5rem; */
+  top: 6px;
+}
+
+.home-icon.shrink img {
+  height: 2.5rem;
+  /* top: 2px; */
+}
+
+
 
 aside {
   background-color: var(--blue-energy);
@@ -486,7 +519,8 @@ a {
 /* Small Screen */
 @media screen and (min-width: 576px) {
   body {
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 120px;
     min-height: 100vh;
     display: grid;
     
@@ -533,9 +567,9 @@ a {
 /* Medium Screen */
 @media screen and (min-width: 768px) {
   body {
-    /* margin: 0; */
+    margin: 0 auto;
+    margin-top: 120px;
     min-height: 100vh;
-    /* min-width: 100vw; */
     display: grid;
     
     /* Use `grid-template` to control the sizing of these areas. */
@@ -578,8 +612,10 @@ a {
 
 /* Large Screen */
 @media screen and (min-width: 992px) {
-    body {
+  body {
     margin: 0 auto;
+    margin-top: 120px;
+
     min-height: 100vh;
     display: grid;
 
@@ -643,8 +679,8 @@ a {
 /* Extra Large Screen */
 @media screen and (min-width: 1200px) {  
   .main-container {
-    /* align-items: center; */
     margin: 0 auto;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
   }
