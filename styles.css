@@ -3,10 +3,12 @@
 /* ***************************************************************************************** */
 :root {
   --icy-blue: #add7f6ff;
-  --dusty-taupe: #a18276ff;
+  --dusty-taupe2: #a18276ff;
+  --dusty-taupe: #3f8efcff;
   --blue-energy: #3f8efcff;
   --granite: #4c6663ff;
   --tan: #dab785ff;
+  --header-footer: rgb(203, 232, 252);
 }
 
 
@@ -193,7 +195,8 @@ h1 {
 
 h2 {
   font-size: 25px;
-  color: white;
+  /* color: white; */
+  color: black;
   font-family: "DM Serif Display", serif;
   background-color: var(--dusty-taupe);
   border-radius: 10px 10px 0px 0px;
@@ -231,7 +234,7 @@ li {
 header {
   /* background-color: var(--granite); */
   /* background-color: rgb(136, 183, 248);  */
-  background-color: rgb(150, 155, 156);
+  background-color: var(--header-footer);
   grid-area: header;
   font-size: 30px;
   display: flex;
@@ -249,9 +252,11 @@ main {
   grid-area: main;
 }
 
-footer {
+footer { 
   grid-area: footer;
-  background-color: var(--granite);
+  /* background-color: var(--granite); */
+  /* background-color: rgb(150, 155, 156); */
+  background-color: var(--header-footer);
   box-sizing: border-box;
   padding: 10px;
 }
@@ -267,11 +272,12 @@ button {
   color: #090909;
   font-size: 18px;
   border-radius: 0.5em;
-  background: #e8e8e8;
+  /* background: #e8e8e8; */
+  background: var(--dusty-taupe2);
   cursor: pointer;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #5f5d5d;
   transition: all 0.3s;
-  box-shadow: 1px 1px 2px #c5c5c5, -1px -1px 2px #ffffff;
+  box-shadow: 1px 1px 2px #c5c5c5, -1px -1px 2px #5c5c5c;
   
   padding: 10px;
   margin-bottom: 15px;
@@ -430,7 +436,8 @@ a {
 /* ************************************************************************************************************************** */
 
 .main-card {
-  background-color: rgb(251, 252, 251);
+  /* background-color: rgb(251, 252, 251); */
+  background-color: var(--header-footer);
   display: flex;
   flex-direction: column;
   border-radius: 20px 20px 10px 10px;
@@ -618,7 +625,7 @@ a {
     top: 25px;
   }
 
-  /* fixme - trying to hide the floating buttons when the nav bar on the side shows up */
+  /* Hide the floating buttons when the nav bar on the side shows up */
   .floating-btn {
     visibility: hidden;
   }
