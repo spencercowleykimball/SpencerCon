@@ -18,3 +18,23 @@ window.addEventListener("scroll", () => {
         home_icon.classList.remove("shrink");
     }
 })
+
+
+// Ticker code
+const ticker = document.getElementById("ticker");
+let position = 0;
+
+function animate() {
+position -= 1; // speed (adjust this)
+
+// Reset when it reaches the full width
+if (position <= -ticker.offsetWidth) {
+    position = 0;
+}
+
+ticker.style.transform = `translateX(${position}px)`;
+requestAnimationFrame(animate);
+}
+
+// Make sure the ticker starts at the correct position
+animate();

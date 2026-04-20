@@ -52,12 +52,14 @@ I love how it feels like a timeline for the history of Spencer Con, that’s rea
 **Person 3 - Spencer Hall, BYU Student**
 
 He recommended to remove on my bullet points where I repeat saying Spencer Con in the information cards.
+Provided monetary support for SpencerCon by Venmo-ing $10.
 
 **Person 4 - Spencer Ludlow, Control Engineer at Enterprise Products**
 
 
 
-**Person 5**
+**Person 5 - Kevin Kimball, CPA and Professor at BYU-Idaho, aka Dad**
 
+Provided monetary support for SpencerCon by Venmo-ing $20.
 
 
