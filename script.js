@@ -25,7 +25,7 @@ const ticker = document.getElementById("ticker");
 let position = 0;
 
 function animate() {
-position -= 1; // speed (adjust this)
+position -= 1.2; // speed (adjust this)
 
 // Reset when it reaches the full width
 if (position <= -ticker.offsetWidth) {
